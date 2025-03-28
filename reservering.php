@@ -9,6 +9,7 @@
     <meta name="keywords" content="Umami, Sushi, Restaurant, Gerechten, Menu, All you can eat, HTML, CSS, JavaScript, PHP">
     <meta name="author" content="Halisdzhan Atla">
     <link rel="stylesheet" href="css/stylesheetHalisdzhan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="js/script.js" defer></script>
  
  

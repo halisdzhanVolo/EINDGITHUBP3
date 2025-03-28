@@ -1,0 +1,945 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+}
+
+
+p {
+    font-family: 'Roboto';   
+}
+
+h1, h2 {
+    font-family: 'Berlin Sans FB', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/berlin-sans-fb');
+body {
+    background-color: #b5bef4;
+
+}
+
+header {
+    margin-bottom: 10vh;
+    color: white;
+    text-align: center;
+    background-color: #1B1729;
+    z-index: 1000;
+
+}
+
+.liHide {
+    display: none;
+}
+
+
+/* mobile */
+
+
+
+
+
+nav {
+    padding: 3vh;
+}
+
+.nav-links {
+    display: none;
+}
+
+.menu-toggle {
+    display: block;
+    margin-left: 70vw;
+    color: #FCA146;
+    font-size: 5vh;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #1B1729;
+    position: absolute;
+    right: 0;
+    top: 9.2vh;
+    width: 40vw;
+    max-width: 200px;
+    text-align: center;
+    border-bottom-left-radius: 2vh;
+    font-size: 2vh;
+    z-index: 1000;
+}
+
+.mobile-menu.active {
+    display: flex;
+}
+
+.mobile-menu li {
+    padding: 15px;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+#headerlogo {
+    position: absolute;
+    top: 3vh;
+    left: 3vw;
+    height: 7vh;
+    border-radius: 2vh;
+}
+
+.liHide {
+    display: block;
+}
+
+
+
+.event-banner-H {
+    margin-top: 10vh;
+    margin-left: 17vw;
+    padding: 2vh;
+    background-color: #ffffff;
+    border-radius: 2vh;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 63.5vw;
+
+
+}
+
+
+#event-image-H {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 2vh;
+    background-image: url('../images/allEat.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+@media (min-width: 441px) and (max-width: 768px) {
+
+    /* header responsief tablet*/
+    nav {
+        padding: 3vh;
+    }
+
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: 88vw;
+        color: #FCA146;
+        font-size: 5vh;
+
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #1B1729;
+        position: absolute;
+        right: 0;
+        top: 9.2vh;
+        width: 25vw;
+        text-align: center;
+        border-bottom-left-radius: 2vh;
+        font-size: 2vh;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+    }
+
+    .mobile-menu li {
+        padding: 15px;
+    }
+
+    .mobile-menu a {
+        color: white;
+        text-decoration: none;
+    }
+
+    #headerlogo {
+        top: 3vh;
+        position: absolute;
+        height: 7vh;
+        border-radius: 2vh;
+    }
+
+    .liHide {
+        display: block;
+    }
+}
+
+
+
+@media (min-width: 769px) {
+
+    /* header responsief desktop*/
+    .menu-toggle {
+        display: none;
+    }
+
+
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        margin-right: 10vw;
+        margin-top: 0vh;
+        padding: 5vh;
+    }
+
+
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+        margin-right: -12vw;
+    }
+
+    .nav-links a:hover {
+        color: #FCA146;
+    }
+
+    #headerlogo {
+        top: 4vh;
+        margin-top: 1vh;
+        position: absolute;
+        height: 11vh;
+        border-radius: 2vh;
+    }
+
+    .liHide {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+/*home pagina*/
+
+/* phone home mobile first */
+
+#landingimg {
+    position: absolute;
+    bottom: 57vh;
+    left: 0;
+    width: 100%;
+    height: 34vh;
+    z-index: -1;
+    /* zorgen voor dat het achter header komt */
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    background-image: url('../images/sushihead.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+#greeting-H {
+    font-size: 1rem;
+    margin-left: 3vw;
+    margin-top: 40vh;
+    text-align: center;
+}
+
+#video-H {
+    height: 50vh;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    border-radius: 5%;
+    border: 2px solid black;
+}
+
+#greetingRestaurant-H {
+    font-size: 1rem;
+    margin-left: 3vw;
+    margin-top: 3vh;
+    text-align: center;
+}
+
+
+.event-info-H h2 {
+    font-size: 1.3rem;
+}
+
+.event-info-H p {
+    font-size: 0.9rem;
+}
+
+.event-banner-H {
+    width: 85vw;
+    margin-left: 4vw;
+}
+
+
+#event-image-H {
+    width: 70vw;
+    height: 30vh;
+}
+
+#gerechtenmove-H {
+   margin-left: 30vw;
+
+
+}
+
+.gerechten-H {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 20px;
+}
+
+.gerechten-H img {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+    box-shadow: 4px 16px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+
+}
+
+#hidesesam-H {
+    display: none;
+}
+
+.menu-button-H {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+
+}
+
+.menu-button-H button {
+    background-color: #ff9900;
+    border: 3px solid #000000;
+    padding: 10px 20px;
+    border-radius: 10%;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+#umamisushislogan-H p {
+    font-size: 1rem;
+    margin-left: 3vw;
+    margin-top: 3vh;
+    text-align: center;
+}
+
+#umamisushislogan-H img {
+    width: 90vw;
+    height: 30vh;
+    margin-left: 5vw;
+    margin-top: 3vh;
+    border-radius: 10%;
+    box-shadow: 4px 16px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+/* tablet home */
+@media (min-width: 441px) and (max-width: 768px) {
+    #landingimg {
+        position: absolute;
+        bottom: 49vh;
+        left: 0;
+        width: 100%;
+        height: 40vh;
+        z-index: -1;
+        /* zorgen voor dat het achter header komt */
+        border-bottom-right-radius: 10%;
+        border-bottom-left-radius: 10%;
+        background-image: url('../images/sushihead.jpg');
+        background-size: cover;
+        background-position: center;
+        box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #greeting-H {
+        font-size: 1.5rem;
+        margin-top: 50vh;
+    }
+
+    #video-H {
+        height: 55vh;
+        width: 80vw;
+        margin-left: 10vw;
+        margin-top: 8vh;
+        border-radius: 10%;
+        border: 3px solid black;
+    }
+
+    #greetingRestaurant-H {
+        font-size: 1.5rem;
+        margin-top: 4vh;
+    }
+
+    .event-info-H h2 {
+        font-size: 2rem;
+    }
+
+    .event-info-H p {
+        font-size: 1.5rem;
+    }
+
+
+    .event-banner-H {
+        width: 78vw;
+        margin-left: 10vw;
+    }
+
+
+    #event-image-H {
+        width: 70vw;
+        height: 50vh;
+    }
+
+    #gerechtenmove-H {
+        margin-left: 40vw;
+    }
+
+    .gerechten-H {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin: 20px;
+    }
+
+    .gerechten-H img:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    .gerechten-H img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10%;
+        box-shadow: 4px 16px 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid black;
+        object-fit: cover;
+    }
+
+    .menu-button-H {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .menu-button-H button {
+        background-color: #ff9900;
+        border: 3px solid #000000;
+        padding: 10px 20px;
+        border-radius: 10%;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #hidesesam-H {
+        display: block;
+    }
+
+    #umamisushislogan-H p {
+        font-size: 1.2rem;
+        margin-left: 3vw;
+        margin-top: 3vh;
+        text-align: center;
+    }
+
+    #umamisushislogan-H img {
+        width: 90vw;
+        height: 70vh;
+        margin-left: 5vw;
+        margin-top: 3vh;
+        border-radius: 10%;
+        box-shadow: 4px 16px 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid black;
+        object-fit: cover;
+    }
+
+
+}
+
+
+
+/* desktop home */
+@media (min-width: 769px) {
+    #landingimg {
+        position: absolute;
+        bottom: 27vh;
+        width: 100%;
+        height: 57vh;
+        z-index: -1;
+        /* zorgen voor dat het achter header komt */
+        border-bottom-right-radius: 10%;
+        border-bottom-left-radius: 10%;
+        background-image: url('../images/sushihead.jpg');
+        background-size: cover;
+        background-position: center;
+        box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #greeting-H {
+        font-size: 2rem;
+        margin-top: 60vh;
+    }
+
+    #video-H {
+        height: 60vh;
+        width: 65vw;
+        margin-left: 17vw;
+        margin-top: 10vh;
+        border-radius: 10%;
+        border: 3px solid black;
+    }
+
+    #greetingRestaurant-H {
+        font-size: 2rem;
+        margin-top: 3vh;
+    }
+
+    .event-info-H h2 {
+        font-size: 2.3rem;
+    }
+
+    .event-info-H p {
+        font-size: 1.9rem;
+    }
+
+
+    .event-banner-H {
+        width: 65vw;
+        margin-left: 16vw;
+    }
+
+    #event-image-H {
+        width: 55vw;
+        height: 50vh;
+    }
+
+    #gerechtenmove-H {
+        margin-left: 44vw;
+        font-size: 2rem;
+        text-align: flex-start;
+
+    }
+
+    .gerechten-H {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin: 20px;
+    }
+
+    .gerechten-H img:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    .gerechten-H img {
+        width: 90%;
+        height: auto;
+        border-radius: 10%;
+        box-shadow: 4px 16px 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid black;
+        object-fit: cover;
+        margin: 0 auto;
+        /* Center the images */
+    }
+
+    .menu-button-H {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2.5rem;
+    }
+
+    .menu-button-H button {
+        background-color: #ff9900;
+        border: 3px solid #000000;
+        padding: 10px 20px;
+        border-radius: 10%;
+        color: white;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+
+    #hidesesam-H {
+        display: block;
+    }
+
+    #misosoup-H {
+        width: 50vw;
+    }
+
+    #umamisushislogan-H p {
+        font-size: 2.3rem;
+        margin-left: 0;
+        margin-top: 3vh;
+        text-align: center;
+    }
+
+    #umamisushislogan-H img {
+        width: 70vw;
+        height: 80vh;
+        margin-left: 15vw;
+        margin-top: 3vh;
+        border-radius: 10%;
+        box-shadow: 4px 16px 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid black;
+        object-fit: cover;
+    }
+}
+
+
+
+
+
+/* reservering paginas mobile first */
+
+
+form {
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2vw;
+    max-width: 90%;
+    margin: 20px auto;
+    text-align: center;
+
+}
+
+form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: vw;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea,
+form select {
+    width: 80vw;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+
+form input[type="submit"] {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e68a00;
+}
+
+form .info-text {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+form .warning-text {
+    font-size: 0.8rem;
+    color: red;
+    margin-bottom: 15px;
+    
+}
+
+
+form .reservation-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15vh;
+}
+
+form .reservation-item {
+    width: 45%;
+    text-align: left;
+}
+
+form .reservation-item label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    margin-left: 8vw;
+}
+
+form .reservation-item select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+
+
+/* tablet reservering */
+@media (min-width: 441px) {
+    form {
+        max-width: 80%;
+    }
+
+    form input[type="text"],
+    form input[type="number"],
+    form textarea,
+    form select {
+        width: 60vw;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+/* desktop reservering */
+@media (min-width: 769px) {
+    form {
+        max-width: 60%;
+    }
+
+    form input[type="text"],
+    form input[type="number"],
+    form textarea,
+    form select {
+        width: 45vw;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer styles */
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    z-index: -1000;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.logo img {
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.right-content {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.slogan h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.slogan h4::after {
+    content: "EVERYTHING!";
+    display: block;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 25px;
+    width: 100%;
+
+}
+
+
+.social-media a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 28px;
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #ff6600;
+    transform: scale(1.2);
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    padding: 0 15px;
+}
+
+/* Tablet devices (441px to 768px) */
+@media (min-width: 441px) and (max-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .logo {
+        width: 40%;
+        margin-bottom: 0;
+        justify-content: flex-start;
+    }
+
+    .logo img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .right-content {
+        width: 55%;
+        text-align: right;
+    }
+
+    .slogan h4 {
+        font-size: 1.8rem;
+    }
+
+    .social-media {
+
+        justify-content: flex-end;
+        gap: 20px;
+        margin-left: -11vw;
+
+    }
+
+    .social-media a {
+        font-size: 30px;
+
+    }
+}
+
+/* Desktop devices (769px and above) */
+@media (min-width: 769px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 0 20px;
+    }
+
+    .logo {
+        width: auto;
+        margin-bottom: 0;
+        justify-content: flex-start;
+    }
+
+    .logo img {
+        width: 50vw;
+        max-width: 300px;
+
+        margin-top: 30px;
+    }
+
+    .right-content {
+        width: auto;
+        text-align: right;
+        margin-bottom: 0;
+    }
+
+    .slogan h4 {
+        font-size: 2rem;
+    }
+
+    .social-media {
+        justify-content: flex-end;
+        margin-right: 100px;
+        gap: 20px;
+        margin-left: -7vw;
+    }
+
+    .social-media a {
+        font-size: 34px;
+    }
+}
